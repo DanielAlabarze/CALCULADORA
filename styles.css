@@ -38,6 +38,8 @@ body {
     "b1 b2 b3 restar "
     "b0 b0 punto sumar "
     "borrar positivoOnegativo igual igual ";
+  justify-content: space-between;
+  align-content: center;
 }
 
 .b1 {

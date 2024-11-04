@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  /*height: 100vh;*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 23rem;
+  margin: auto auto;
+  padding: 1.2rem;
+  /*border: 1px solid #ccc;*/
+  border-radius: 5px;
+}
+
+.buttons {
+  width: 19rem;
+
+  gap: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "porcentaje potencia raiz borrarUltimoDigito"
+    "b7 b8 b9 dividir "
+    "b4 b5 b6 multiplicar "
+    "b1 b2 b3 restar "
+    "b0 b0 punto sumar "
+    "borrar positivoOnegativo igual igual ";
+}
+
+.b1 {
+  grid-area: b1;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.b2 {
+  grid-area: b2;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.b3 {
+  grid-area: b3;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.b4 {
+  grid-area: b4;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.b5 {
+  grid-area: b5;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.b6 {
+  grid-area: b6;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.b7 {
+  grid-area: b7;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.b8 {
+  grid-area: b8;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.b9 {
+  grid-area: b9;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.b0 {
+  grid-area: b0;
+  width: 9rem;
+  font-size: 3rem;
+  border-radius: 15px;
+}
+.borrarUltimoDigito {
+  grid-area: borrarUltimoDigito;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.potencia {
+  grid-area: potencia;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.raiz {
+  grid-area: raiz;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.porcentaje {
+  grid-area: porcentaje;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.dividir {
+  grid-area: dividir;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.multiplicar {
+  grid-area: multiplicar;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.restar {
+  grid-area: restar;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.sumar {
+  grid-area: sumar;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.borrar {
+  grid-area: borrar;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.igual {
+  grid-area: igual;
+  width: 9rem;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.punto {
+  grid-area: punto;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.positivoOnegativo {
+  grid-area: positivoOnegativo;
+  font-size: 1.3rem;
+  border-radius: 15px;
+}
+
+#display2 {
+  width: 19rem;
+  height: 1.5rem;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: azure;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+input {
+  width: 19rem;
+  height: 4rem;
+  color: azure;
+  border: none;
+  outline: none;
+  background-color: black;
+
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+
+  text-align: right;
+}
+.contenedorSpeaker {
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+.speaker {
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+button {
+  width: 4rem;
+  height: 4rem;
+}
+
+.operator {
+  background-color: #f0f0f0;
+}
+
+.equal {
+  background-color: #4c00ffd7;
+  color: white;
+}
+
+.clear {
+  background-color: #ff0000;
+  color: white;
+}
+
+.borrarUltimoDigito {
+  background-color: red;
+  color: white;
+}
+
+/* ophone 7 plus 414px × 736px */

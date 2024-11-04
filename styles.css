@@ -15,18 +15,21 @@ body {
 .calculator {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   justify-content: center;
+  align-items: center;
+  justify-items: center;
   width: 23rem;
   margin: auto auto;
   padding: 1.2rem;
+  border: solid 1px white;
  
   border-radius: 5px;
 }
 
 .buttons {
   width: 19rem;
-
+border: solid 1px #ff0000;
   gap: 0.6rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -40,6 +43,8 @@ body {
     "borrar positivoOnegativo igual igual ";
   justify-content: space-between;
   align-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .b1 {

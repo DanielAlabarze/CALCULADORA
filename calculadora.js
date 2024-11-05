@@ -125,7 +125,7 @@ function calculate() {
       text: "No es posible la División por cero ",
       background: "black",
       color : "white",
-      width: "200px",
+      width: "230px",
     });
 
     clear();

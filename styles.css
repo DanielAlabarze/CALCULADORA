@@ -5,19 +5,16 @@
 
 body {
   background-color: black;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 .calculator {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   justify-items: center;
   width: 24rem;
   margin: auto auto;
@@ -250,6 +247,7 @@ border: solid 1px red;
   border-radius: 15px;
   font-size: 2rem;
   height: 4rem;
+  margin-left: 12px;
  
 }
 .punto {
@@ -302,8 +300,9 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  
   border-radius: 50%;
+  margin: 1rem auto 1rem;
 }
 .speaker {
   width: 1.5rem;

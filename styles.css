@@ -44,64 +44,73 @@ border: solid 1px red;
   margin-bottom: 0.5rem;
 }*/
 
-.buttons {  display: grid;
+.contenedorBotones {
+  width: 3.5rem;
+  height: 3.5rem;
+
+
+}
+
+.buttons {
+  display: grid;
+
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   gap: 0.8em .8em;
   grid-auto-flow: row;
   grid-template-areas:
-    "porcentaje potencia raiz borrarUltimoDigito"
-    "b7 b8 b9 dividir"
-    "b4 b5 b6 multiplicar"
-    "b1 b2 b3 restar"
-    "b0 b0 punto sumar"
-    "borrar positivoOnegativo igual igual";
+    "xporcentaje xpotencia xraiz xborrarUltimoDigito"
+    "xb7 xb8 xb9 xdividir"
+    "xb4 xb5 xb6 xmultiplicar"
+    "xb1 xb2 xb3 xrestar"
+    "xb0 xb0 xpunto xsumar"
+    "xborrar xpositivoOnegativo xigual xigual";
 }
 
-.porcentaje { grid-area: porcentaje; }
+.xporcentaje { grid-area: xporcentaje; }
 
-.potencia { grid-area: potencia; }
+.xpotencia { grid-area: xpotencia; }
 
-.raiz { grid-area: raiz; }
+.xraiz { grid-area: xraiz; }
 
-.borrarUltimoDigito { grid-area: borrarUltimoDigito; }
+.xborrarUltimoDigito { grid-area: xborrarUltimoDigito; }
 
-.b7 { grid-area: b7; }
+.xb7 { grid-area: xb7; }
 
-.b8 { grid-area: b8; }
+.xb8 { grid-area: xb8; }
 
-.b9 { grid-area: b9; }
+.xb9 { grid-area: xb9; }
 
-.dividir { grid-area: dividir; }
+.xdividir { grid-area: xdividir; }
 
-.b4 { grid-area: b4; }
+.xb4 { grid-area: xb4; }
 
-.b5 { grid-area: b5; }
+.xb5 { grid-area: xb5; }
 
-.b6 { grid-area: b6; }
+.xb6 { grid-area: xb6; }
 
-.multiplicar { grid-area: multiplicar; }
+.xmultiplicar { grid-area: xmultiplicar; }
 
-.b1 { grid-area: b1; }
+.xb1 { grid-area: xb1; }
 
-.b2 { grid-area: b2; }
+.xb2 { grid-area: xb2; }
 
-.b3 { grid-area: b3; }
+.xb3 { grid-area: xb3; }
 
-.restar { grid-area: restar; }
+.xrestar { grid-area: xrestar; }
 
-.b0 { grid-area: b0; }
+.xb0 { grid-area: xb0; width: 8rem;}
 
-.punto { grid-area: punto; }
+.xpunto { grid-area: xpunto; }
 
-.sumar { grid-area: sumar; }
+.xsumar { grid-area: xsumar; }
 
-.borrar { grid-area: borrar; }
+.xborrar { grid-area: xborrar; }
 
-.positivoOnegativo { grid-area: positivoOnegativo; }
+.xpositivoOnegativo { grid-area: xpositivoOnegativo; }
 
-.igual { grid-area: igual; }
+.xigual { grid-area: xigual; width: 8rem }
 
 
 

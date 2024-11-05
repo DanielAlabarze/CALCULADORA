@@ -5,22 +5,19 @@
 
 body {
   background-color: black;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
-  
 }
 
 .calculator {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   width: 24rem;
   margin: auto auto;
-
-
- 
   border-radius: 5px;
 }
 
@@ -43,224 +40,158 @@ border: solid 1px red;
 
   margin-bottom: 0.5rem;
 }*/
-
 .contenedorBotones {
-  width: 3.5rem;
-  height: 3.5rem;
-
-
+  margin: 0.5rem;
 }
 
 .buttons {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  gap: 0.8em .8em;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "xporcentaje xpotencia xraiz xborrarUltimoDigito"
-    "xb7 xb8 xb9 xdividir"
-    "xb4 xb5 xb6 xmultiplicar"
-    "xb1 xb2 xb3 xrestar"
-    "xb0 xb0 xpunto xsumar"
-    "xborrar xpositivoOnegativo xigual xigual";
 }
 
-.xporcentaje { grid-area: xporcentaje; }
+.caja1,
+.caja2,
+.caja3,
+.caja4,
+.caja5,
+.caja6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
 
-.xpotencia { grid-area: xpotencia; }
-
-.xraiz { grid-area: xraiz; }
-
-.xborrarUltimoDigito { grid-area: xborrarUltimoDigito; }
-
-.xb7 { grid-area: xb7; }
-
-.xb8 { grid-area: xb8; }
-
-.xb9 { grid-area: xb9; }
-
-.xdividir { grid-area: xdividir; }
-
-.xb4 { grid-area: xb4; }
-
-.xb5 { grid-area: xb5; }
-
-.xb6 { grid-area: xb6; }
-
-.xmultiplicar { grid-area: xmultiplicar; }
-
-.xb1 { grid-area: xb1; }
-
-.xb2 { grid-area: xb2; }
-
-.xb3 { grid-area: xb3; }
-
-.xrestar { grid-area: xrestar; }
-
-.xb0 { grid-area: xb0; width: 8rem;}
-
-.xpunto { grid-area: xpunto; }
-
-.xsumar { grid-area: xsumar; }
-
-.xborrar { grid-area: xborrar; }
-
-.xpositivoOnegativo { grid-area: xpositivoOnegativo; }
-
-.xigual { grid-area: xigual; width: 8rem }
-
-
-
-
-
-
+  width: 19rem;
+}
+.caja5,
+.caja6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .b1 {
-
   border-radius: 50%;
   font-size: 2.5rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .b2 {
-
   border-radius: 50%;
   font-size: 2.5rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .b3 {
-
   border-radius: 50%;
   font-size: 2.5rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .b4 {
-
   border-radius: 50%;
   font-size: 2.5rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .b5 {
-
   border-radius: 50%;
   font-size: 2.5rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .b6 {
-
   border-radius: 50%;
   font-size: 2.5rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .b7 {
-
   border-radius: 50%;
   font-size: 2.5rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .b8 {
-  
   border-radius: 50%;
   font-size: 2.5rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .b9 {
-
   border-radius: 50%;
   font-size: 2.5rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .b0 {
-
   width: 8rem;
   font-size: 2.5rem;
   border-radius: 15px;
   height: 3.5rem;
 }
 .borrarUltimoDigito {
- 
   border-radius: 15px;
   font-size: 2rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .potencia {
-
   border-radius: 15px;
   font-size: 2rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .raiz {
-  
   border-radius: 15px;
   font-size: 2rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .porcentaje {
-
   border-radius: 15px;
   font-size: 2rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .dividir {
-
   border-radius: 15px;
   font-size: 2rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .multiplicar {
-
   border-radius: 15px;
   font-size: 2rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .restar {
-
   border-radius: 15px;
   font-size: 2rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .sumar {
-
   border-radius: 15px;
   font-size: 2rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .borrar {
-  
   border-radius: 15px;
   font-size: 2rem;
   width: 3.5rem;
   height: 3.5rem;
 }
 .igual {
- 
   width: 8rem;
   border-radius: 15px;
   font-size: 2rem;
   height: 3.5rem;
-  
- 
 }
 .punto {
-
   border-radius: 50%;
   font-size: 2rem;
   width: 3.5rem;
@@ -268,7 +199,6 @@ border: solid 1px red;
 }
 
 .positivoOnegativo {
-  
   font-size: 1.3rem;
   border-radius: 15px;
   width: 3.5rem;
@@ -289,7 +219,7 @@ border: solid 1px red;
   text-align: right;
 }
 
-input {
+#display {
   width: 19rem;
   height: 4rem;
   color: azure;
@@ -309,7 +239,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   border-radius: 50%;
   margin: 1rem auto 1rem;
 }
@@ -333,7 +263,5 @@ input {
   color: white;
 }
 
+
 /* ophone 7 plus 414px × 736px */
-
-
-

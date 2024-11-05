@@ -6,7 +6,11 @@
     <meta name="description" content="Claculadora" />
     <meta name="keywords" content="HTML, CSS, JavaScript, React" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48" href="./img/imagenCalculadora.png" />
+    <link
+      rel="shortcut icon"
+      sizes="16x16 24x24 32x32 48x48"
+      href="./img/imagenCalculadora.png"
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -15,41 +19,109 @@
   </head>
   <body>
     <div class="calculator">
-      <div>
-      <button class="contenedorSpeaker"><img src="./img/speaker.png" alt="speaker" class="speaker"></button>
-    </div>
+      <div class="">
+        <button class="contenedorSpeaker">
+          <img src="./img/speaker.png" alt="speaker" class="speaker" />
+        </button>
+      </div>
+      <div class="displays">
       <input type="text" id="display2" readonly />
       <input type="text" id="display" readonly />
+      </div>
       <div class="buttons">
-        <div class="xb7 contenedorBotones"><button class="operator b7">7</button></div>
-        <div class="xb8 contenedorBotones"><button class="operator b8">8</button></div>
-        <div class="xb9 contenedorBotones"><button class="operator b9">9</button></div>
-        <div class="xb4 contenedorBotones"><button class="operator b4">4</button></div>
-        <div class="xb5 contenedorBotones"><button class="operator b5">5</button></div>
-        <div class="xb6 contenedorBotones"><button class="operator b6">6</button></div>
-        <div class="xb1 contenedorBotones"><button class="operator b1">1</button></div>
-        <div class="xb2 contenedorBotones"><button class="operator b2">2</button></div>
-        <div class="xb3 contenedorBotones"><button class="operator b3">3</button></div>
-        <div class="xb0 contenedorBotones"><button class="operator b0">0</button></div>
-        <div class="xpunto contenedorBotones"><button class="operator punto">.</button></div>
-        <div class="xmultiplicar contenedorBotones"><button class="operator multiplicar">*</button></div>
-        <div class="xdividir contenedorBotones"><button class="operator dividir">/</button></div>
-        <div class="xsuma contenedorBotones"><button class="operator sumar">+</button></div>
-        <div class="xrestar contenedorBotones"><button class="operator restar">-</button></div>
+        <div class="caja1">
+          <div class="xporcentaje contenedorBotones">
+            <button class="operator porcentaje">%</button>
+          </div>
+          <div class="xpotencia contenedorBotones">
+            <button class="operator potencia">^</button>
+          </div>
+          <div class="xraiz contenedorBotones">
+            <button class="operator raiz">√</button>
+          </div>
 
-        <div class="xpositivoOnegativo contenedorBotones"><button class="operator positivoOnegativo">+/-</button></div>
+          <div class="xborrarUltimoDigito contenedorBotones">
+            <button class="operator borrarUltimoDigito">«</button>
+          </div>
+        </div>
 
+        <div class="caja2">
+          <div class="xb7 contenedorBotones">
+            <button class="operator b7">7</button>
+          </div>
+          <div class="xb8 contenedorBotones">
+            <button class="operator b8">8</button>
+          </div>
+          <div class="xb9 contenedorBotones">
+            <button class="operator b9">9</button>
+          </div>
 
-        <div class="xporcentaje contenedorBotones"><button class="operator porcentaje">%</button></div>
-        <div class="xpotencia contenedorBotones"><button class="operator potencia">^</button></div>
-        <div class="xraiz contenedorBotones"><button class="operator raiz">√</button></div>
+          <div class="xdividir contenedorBotones">
+            <button class="operator dividir">/</button>
+          </div>
+        </div>
 
-        <div class="xborrarUltimoDigito contenedorBotones"><button class="operator borrarUltimoDigito">«</button></div>
+        <div class="caja3">
+          <div class="xb4 contenedorBotones">
+            <button class="operator b4">4</button>
+          </div>
+          <div class="xb5 contenedorBotones">
+            <button class="operator b5">5</button>
+          </div>
+          <div class="xb6 contenedorBotones">
+            <button class="operator b6">6</button>
+          </div>
+          <div class="xmultiplicar contenedorBotones">
+            <button class="operator multiplicar">*</button>
+          </div>
+        </div>
 
-        <div class="xborrar contenedorBotones"><button class="operator clear borrar">C</button></div>
+        <div class="caja4">
+          <div class="xb1 contenedorBotones">
+            <button class="operator b1">1</button>
+          </div>
+          <div class="xb2 contenedorBotones">
+            <button class="operator b2">2</button>
+          </div>
+          <div class="xb3 contenedorBotones">
+            <button class="operator b3">3</button>
+          </div>
+          <div class="xrestar contenedorBotones">
+            <button class="operator restar">-</button>
+          </div>
+        </div>
 
-        <div class="xigual contenedorBotones"><button class="operator equal igual">=</button></div>
-        <audio class="botonAudio" src="./audio/sonidoBoton.mp3" type="audio/mp3"></audio>
+        <div class="caja5">
+          <div class="xb0 contenedorBotones">
+            <button class="operator b0">0</button>
+          </div>
+          <div class="xpunto contenedorBotones">
+            <button class="operator punto">.</button>
+          </div>
+
+          <div class="xsuma contenedorBotones">
+            <button class="operator sumar">+</button>
+          </div>
+        </div>
+
+        <div class="caja6">
+          <div class="xborrar contenedorBotones">
+            <button class="operator clear borrar">C</button>
+          </div>
+          <div class="xpositivoOnegativo contenedorBotones">
+            <button class="operator positivoOnegativo">+/-</button>
+          </div>
+
+          <div class="xigual contenedorBotones">
+            <button class="operator equal igual">=</button>
+          </div>
+        </div>
+
+        <audio
+          class="botonAudio"
+          src="./audio/sonidoBoton.mp3"
+          type="audio/mp3"
+        ></audio>
       </div>
     </div>
     <script src="calculadora.js"></script>

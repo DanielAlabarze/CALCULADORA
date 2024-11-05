@@ -21,15 +21,15 @@ body {
   justify-items: center;
   width: 24rem;
   margin: auto auto;
-  padding: 1.2rem;
-  border: solid 1px white;
+
+
  
   border-radius: 5px;
 }
 
 .buttons {
   width: 21rem;
-  border: solid 1px #ff0000;
+
   gap: 0.6rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -45,67 +45,68 @@ body {
   align-content: center;
   justify-items: center;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .b1 {
   grid-area: b1;
-
+  border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b2 {
   grid-area: b2;
-
+  border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b3 {
   grid-area: b3;
-
+  border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b4 {
   grid-area: b4;
-
+  border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b5 {
   grid-area: b5;
- 
+  border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b6 {
   grid-area: b6;
- 
+  border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b7 {
   grid-area: b7;
- 
+  border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b8 {
   grid-area: b8;
- 
+  border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b9 {
   grid-area: b9;
-
+  border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
@@ -243,10 +244,6 @@ input {
 .speaker {
   width: 1.5rem;
   border-radius: 50%;
-}
-
-.operator {
-  background-color: #f0f0f0;
 }
 
 .equal {

@@ -27,10 +27,10 @@ body {
   border-radius: 5px;
 }
 
-.buttons {
+/*.buttons {
   width: 21rem;
+border: solid 1px red;
 
-  gap: 0.6rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
@@ -41,155 +41,219 @@ body {
     "b1 b2 b3 restar "
     "b0 b0 punto sumar "
     "borrar positivoOnegativo igual igual ";
-  justify-content: space-between;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
   margin-bottom: 0.5rem;
+}*/
+
+.buttons {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0.8em .8em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "porcentaje potencia raiz borrarUltimoDigito"
+    "b7 b8 b9 dividir"
+    "b4 b5 b6 multiplicar"
+    "b1 b2 b3 restar"
+    "b0 b0 punto sumar"
+    "borrar positivoOnegativo igual igual";
 }
 
+.porcentaje { grid-area: porcentaje; }
+
+.potencia { grid-area: potencia; }
+
+.raiz { grid-area: raiz; }
+
+.borrarUltimoDigito { grid-area: borrarUltimoDigito; }
+
+.b7 { grid-area: b7; }
+
+.b8 { grid-area: b8; }
+
+.b9 { grid-area: b9; }
+
+.dividir { grid-area: dividir; }
+
+.b4 { grid-area: b4; }
+
+.b5 { grid-area: b5; }
+
+.b6 { grid-area: b6; }
+
+.multiplicar { grid-area: multiplicar; }
+
+.b1 { grid-area: b1; }
+
+.b2 { grid-area: b2; }
+
+.b3 { grid-area: b3; }
+
+.restar { grid-area: restar; }
+
+.b0 { grid-area: b0; }
+
+.punto { grid-area: punto; }
+
+.sumar { grid-area: sumar; }
+
+.borrar { grid-area: borrar; }
+
+.positivoOnegativo { grid-area: positivoOnegativo; }
+
+.igual { grid-area: igual; }
+
+
+
+
+
+
 .b1 {
-  grid-area: b1;
+
   border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b2 {
-  grid-area: b2;
+
   border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b3 {
-  grid-area: b3;
+
   border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b4 {
-  grid-area: b4;
+
   border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b5 {
-  grid-area: b5;
+
   border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b6 {
-  grid-area: b6;
+
   border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b7 {
-  grid-area: b7;
+
   border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b8 {
-  grid-area: b8;
+  
   border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b9 {
-  grid-area: b9;
+
   border-radius: 50%;
   font-size: 3rem;
   width: 4rem;
   height: 4rem;
 }
 .b0 {
-  grid-area: b0;
-  width: 9rem;
+
+  width: 8rem;
   font-size: 3rem;
   border-radius: 15px;
   height: 4rem;
 }
 .borrarUltimoDigito {
-  grid-area: borrarUltimoDigito;
+ 
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
 }
 .potencia {
-  grid-area: potencia;
+
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
 }
 .raiz {
-  grid-area: raiz;
+  
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
 }
 .porcentaje {
-  grid-area: porcentaje;
+
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
 }
 .dividir {
-  grid-area: dividir;
+
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
 }
 .multiplicar {
-  grid-area: multiplicar;
+
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
 }
 .restar {
-  grid-area: restar;
+
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
 }
 .sumar {
-  grid-area: sumar;
+
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
 }
 .borrar {
-  grid-area: borrar;
+  
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
 }
 .igual {
-  grid-area: igual;
-  width: 9rem;
+ 
+  width: 8rem;
   border-radius: 15px;
   font-size: 2rem;
   height: 4rem;
+ 
 }
 .punto {
-  grid-area: punto;
+
   border-radius: 50%;
   font-size: 2rem;
   width: 4rem;
@@ -197,7 +261,7 @@ body {
 }
 
 .positivoOnegativo {
-  grid-area: positivoOnegativo;
+  
   font-size: 1.3rem;
   border-radius: 15px;
   width: 4rem;

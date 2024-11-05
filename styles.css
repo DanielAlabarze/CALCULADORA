@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  height: 100vh;
 }
 
 .calculator {
@@ -18,7 +18,7 @@ body {
   text-align: center;
   width: 24rem;
   margin: auto auto;
-  border-radius: 5px;
+
 }
 
 /*.buttons {
@@ -74,135 +74,135 @@ border: solid 1px red;
 .b1 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .b2 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .b3 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .b4 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .b5 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .b6 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .b7 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .b8 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .b9 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .b0 {
-  width: 8rem;
+  width: 6rem;
   font-size: 2.5rem;
   border-radius: 15px;
-  height: 3.5rem;
+  height: 3rem;
 }
 .borrarUltimoDigito {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .potencia {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .raiz {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .porcentaje {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .dividir {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .multiplicar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .restar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .sumar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .borrar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .igual {
-  width: 8rem;
+  width: 6rem;
   border-radius: 15px;
   font-size: 2rem;
-  height: 3.5rem;
+  height: 3rem;
 }
 .punto {
   border-radius: 50%;
   font-size: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .positivoOnegativo {
   font-size: 1.3rem;
   border-radius: 15px;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 #display2 {

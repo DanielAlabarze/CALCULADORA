@@ -66,7 +66,7 @@ function reproducirAudio() {
   setTimeout(() => {
     audio.pause(); // Pausa el audio después de 100ms
     audio.currentTime = 0; // Reinicia el audio al inicio
-  }, 100);
+  }, 80);
 }
 
 // Función para agregar un número al operando actual

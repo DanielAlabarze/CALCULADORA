@@ -4,120 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Daniel Alabarze" />
     <meta name="description" content="Claculadora" />
-    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
       sizes="16x16 24x24 32x32 48x48"
       href="./img/imagenCalculadora.png"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <link rel="stylesheet" href="styles.css" />
     <title>Calculadora</title>
   </head>
-  <body>
-  <div class="">
-        <button class="contenedorSpeaker">
-          <img src="./img/speaker.png" alt="speaker" class="speaker" />
-        </button>
-      </div>
 
+  <body>
+    <button class="contenedorSpeaker">
+      <img src="./img/speaker.png" alt="speaker" class="speaker" />
+    </button>
 
     <div class="calculator">
-    
       <div class="displays">
-      <input type="text" id="display2" readonly />
-      <input type="text" id="display" readonly />
+        <input type="text" id="display2" readonly />
+        <input type="text" id="display" readonly />
       </div>
+
       <div class="buttons">
+
         <div class="caja1">
-          <div class="xporcentaje contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator porcentaje">%</button>
           </div>
-          <div class="xpotencia contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator potencia">^</button>
           </div>
-          <div class="xraiz contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator raiz">√</button>
           </div>
-
-          <div class="xborrarUltimoDigito contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator borrarUltimoDigito">«</button>
           </div>
         </div>
 
         <div class="caja2">
-          <div class="xb7 contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator b7">7</button>
           </div>
-          <div class="xb8 contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator b8">8</button>
           </div>
-          <div class="xb9 contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator b9">9</button>
           </div>
-
-          <div class="xdividir contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator dividir">/</button>
           </div>
         </div>
 
         <div class="caja3">
-          <div class="xb4 contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator b4">4</button>
           </div>
-          <div class="xb5 contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator b5">5</button>
           </div>
-          <div class="xb6 contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator b6">6</button>
           </div>
-          <div class="xmultiplicar contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator multiplicar">*</button>
           </div>
         </div>
 
         <div class="caja4">
-          <div class="xb1 contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator b1">1</button>
           </div>
-          <div class="xb2 contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator b2">2</button>
           </div>
-          <div class="xb3 contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator b3">3</button>
           </div>
-          <div class="xrestar contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator restar">-</button>
           </div>
         </div>
 
         <div class="caja5">
-          <div class="xb0 contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator b0">0</button>
           </div>
-          <div class="xpunto contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator punto">.</button>
           </div>
-
-          <div class="xsuma contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator sumar">+</button>
           </div>
         </div>
 
         <div class="caja6">
-          <div class="xborrar contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator clear borrar">C</button>
           </div>
-          <div class="xpositivoOnegativo contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator positivoOnegativo">+/-</button>
           </div>
-
-          <div class="xigual contenedorBotones">
+          <div class="contenedorBotones">
             <button class="operator equal igual">=</button>
           </div>
+        
         </div>
 
         <audio

@@ -6,8 +6,6 @@
   font-style: normal;
 }
 
-
-
 body {
   background-color: black;
   display: flex;
@@ -82,126 +80,171 @@ border: solid 1px red;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .b2 {
   border-radius: 50%;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .b3 {
   border-radius: 50%;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .b4 {
   border-radius: 50%;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .b5 {
   border-radius: 50%;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .b6 {
   border-radius: 50%;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .b7 {
   border-radius: 50%;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .b8 {
   border-radius: 50%;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .b9 {
   border-radius: 50%;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .b0 {
   width: 8rem;
   font-size: 2rem;
   border-radius: 15px;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .borrarUltimoDigito {
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
+  background-color: red;
 }
 .potencia {
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .raiz {
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .porcentaje {
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .dividir {
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .multiplicar {
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .restar {
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .sumar {
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 .borrar {
   border-radius: 15px;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
+  background-color: #ff0000;
 }
 .igual {
   width: 8rem;
   border-radius: 15px;
   font-size: 2rem;
   height: 4rem;
+  text-align: center;
+  color: black;
+  background-color: #4c00ffd7;
 }
 .punto {
   border-radius: 50%;
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 
 .positivoOnegativo {
@@ -209,6 +252,8 @@ border: solid 1px red;
   border-radius: 15px;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  color: black;
 }
 
 #display2 {
@@ -219,7 +264,6 @@ border: solid 1px red;
   outline: none;
   border-radius: 20px;
   background-color: azure;
-
   padding: 0.5rem;
   font-size: 0.8rem;
   text-align: right;
@@ -232,9 +276,7 @@ border: solid 1px red;
   border: none;
   outline: none;
   background-color: black;
-
   padding: 0.5rem;
-
   text-align: right;
 }
 .contenedorSpeaker {
@@ -244,28 +286,12 @@ border: solid 1px red;
   display: flex;
   justify-content: center;
   align-items: center;
-
   border-radius: 50%;
   margin: 1rem auto 1rem;
 }
 .speaker {
   width: 1.5rem;
   border-radius: 50%;
-}
-
-.equal {
-  background-color: #4c00ffd7;
-  color: white;
-}
-
-.clear {
-  background-color: #ff0000;
-  color: white;
-}
-
-.borrarUltimoDigito {
-  background-color: red;
-  color: white;
 }
 
 /* ophone 7 plus 414px × 736px */

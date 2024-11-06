@@ -8,7 +8,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
 }
 
 .calculator {
@@ -16,9 +15,9 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 24rem;
+  width: 20.5rem;
   margin: auto auto;
-
+  /*border: solid 1px white;*/
 }
 
 /*.buttons {
@@ -41,7 +40,7 @@ border: solid 1px red;
   margin-bottom: 0.5rem;
 }*/
 .contenedorBotones {
-  margin: 0.5rem;
+  margin: 0.3rem;
 }
 
 .buttons {
@@ -49,7 +48,9 @@ border: solid 1px red;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-
+  /*border: solid 1px red;*/
+  width: 19rem;
+  margin: auto;
 }
 
 .caja1,
@@ -63,7 +64,7 @@ border: solid 1px red;
   justify-content: space-between;
   margin: auto;
 
-  width: 19rem;
+  width: 100%;
 }
 .caja5,
 .caja6 {
@@ -74,135 +75,135 @@ border: solid 1px red;
 .b1 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .b2 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .b3 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .b4 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .b5 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .b6 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .b7 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .b8 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .b9 {
   border-radius: 50%;
   font-size: 2.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .b0 {
-  width: 6rem;
+  width: 8rem;
   font-size: 2.5rem;
   border-radius: 15px;
-  height: 3rem;
+  height: 4rem;
 }
 .borrarUltimoDigito {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .potencia {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .raiz {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .porcentaje {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .dividir {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .multiplicar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .restar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .sumar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .borrar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .igual {
-  width: 6rem;
+  width: 8rem;
   border-radius: 15px;
   font-size: 2rem;
-  height: 3rem;
+  height: 4rem;
 }
 .punto {
   border-radius: 50%;
   font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .positivoOnegativo {
   font-size: 1.3rem;
   border-radius: 15px;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 #display2 {
@@ -213,7 +214,7 @@ border: solid 1px red;
   outline: none;
   border-radius: 20px;
   background-color: azure;
-  margin-bottom: 10px;
+
   padding: 0.5rem;
   font-size: 0.8rem;
   text-align: right;
@@ -227,7 +228,6 @@ border: solid 1px red;
   outline: none;
   background-color: black;
 
-  margin-bottom: 0.5rem;
   padding: 0.5rem;
 
   text-align: right;
@@ -262,6 +262,5 @@ border: solid 1px red;
   background-color: red;
   color: white;
 }
-
 
 /* ophone 7 plus 414px × 736px */

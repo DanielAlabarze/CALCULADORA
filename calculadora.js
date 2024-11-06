@@ -34,6 +34,7 @@ contenedorSpeaker.addEventListener("click", () => {
 // Añade un evento de clic a cada botón de la calculadora
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
+ 
     const value = button.textContent;
 
     // Ejecuta diferentes acciones según el botón presionado

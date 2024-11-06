@@ -31,6 +31,9 @@ contenedorSpeaker.addEventListener("click", () => {
   contenedorSpeaker.style.backgroundColor = audioActivo ? "green" : "red"; // Cambia el color de fondo
 });
 
+
+
+
 // Añade un evento de clic a cada botón de la calculadora
 buttons.forEach((button) => {
   button.addEventListener("click", () => {

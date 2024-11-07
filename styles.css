@@ -45,7 +45,7 @@ border: solid 1px red;
   margin-bottom: 0.5rem;
 }*/
 .contenedorBotones {
-  margin: 0.3rem;
+  margin-bottom: 0.6rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -160,7 +160,7 @@ border: solid 1px red;
   color: black;
 }
 .b0 {
-  width: 8.40rem;
+  width: 7.6rem;
   font-size: 2rem;
   border-radius: 15px;
   height: 3.8rem;
@@ -242,7 +242,7 @@ border: solid 1px red;
   background-color: #ff0000;
 }
 .igual {
-  width: 8.40rem;
+  width: 7.6rem;
   border-radius: 15px;
   font-size: 2rem;
   height: 3.8rem;
@@ -276,7 +276,7 @@ border: solid 1px red;
   outline: none;
   border-radius: 20px;
   background-color: azure;
-  padding: 0.5rem;
+  padding: 0.1rem 0.5rem 0.1rem;
   font-size: 0.8rem;
   text-align: right;
 }
@@ -288,7 +288,7 @@ border: solid 1px red;
   border: none;
   outline: none;
   background-color: black;
-  padding: 0.5rem;
+  padding: 0.1rem 0.5rem 0.1rem;
   text-align: right;
 }
 .contenedorSpeaker {

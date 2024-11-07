@@ -11,6 +11,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100vh;
+ 
 }
 
 .calculator {
@@ -56,8 +58,7 @@ border: solid 1px red;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  /*border: solid 1px red;*/
-  width: 19rem;
+  width: 18rem;
   margin: auto;
 }
 
@@ -89,88 +90,88 @@ border: solid 1px red;
 .b1 {
   border-radius: 50%;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .b2 {
   border-radius: 50%;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .b3 {
   border-radius: 50%;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .b4 {
   border-radius: 50%;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .b5 {
   border-radius: 50%;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .b6 {
   border-radius: 50%;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .b7 {
   border-radius: 50%;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .b8 {
   border-radius: 50%;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .b9 {
   border-radius: 50%;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .b0 {
-  width: 8rem;
+  width: 8.40rem;
   font-size: 2rem;
   border-radius: 15px;
-  height: 4rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .borrarUltimoDigito {
   border-radius: 15px;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: white;
   background-color: red;
@@ -178,73 +179,73 @@ border: solid 1px red;
 .potencia {
   border-radius: 15px;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .raiz {
   border-radius: 15px;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .porcentaje {
   border-radius: 15px;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .dividir {
   border-radius: 15px;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .multiplicar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .restar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .sumar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 .borrar {
   border-radius: 15px;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: white;
   background-color: #ff0000;
 }
 .igual {
-  width: 8rem;
+  width: 8.40rem;
   border-radius: 15px;
   font-size: 2rem;
-  height: 4rem;
+  height: 3.8rem;
   text-align: center;
   color:white;
   background-color: #4c00ffd7;
@@ -252,8 +253,8 @@ border: solid 1px red;
 .punto {
   border-radius: 50%;
   font-size: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
@@ -261,14 +262,14 @@ border: solid 1px red;
 .positivoOnegativo {
   font-size: 1.3rem;
   border-radius: 15px;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   text-align: center;
   color: black;
 }
 
 #display2 {
-  width: 19rem;
+  width: 18rem;
   height: 1.5rem;
   color: black;
   border: none;
@@ -298,7 +299,7 @@ border: solid 1px red;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin: 1rem auto 1rem;
+  margin: 0.5rem auto 0.5rem;
 }
 
 .speaker {

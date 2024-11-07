@@ -7,17 +7,17 @@ const speaker = document.querySelector(".speaker"); // Elemento del icono de aud
 const audio = document.querySelector(".botonAudio"); // Elemento de audio que se reproduce en cada clic
 
 // Variables de estado para los operandos y operador
-let currentOperand = "0"; // Operando actual, inicialmente "0"
-let previousOperand = ""; // Operando previo, inicialmente vacío
-let operator = ""; // Operador seleccionado, inicialmente vacío
+let operadorActual = "0"; // Operando actual, inicialmente "0"
+let operadorPrevio = ""; // Operando previo, inicialmente vacío
+let operador = ""; // Operador seleccionado, inicialmente vacío
 
 // Inicialización del display con "0"
 updateDisplay();
 
 // Función para alternar el signo del operando actual
 function toggleSign() {
-  if (currentOperand !== "0") {
-    currentOperand = (parseFloat(currentOperand) * -1).toString(); // Cambia el signo
+  if (operadorActual !== "0") {
+    operadorActual = (parseFloat(operadorActual) * -1).toString(); // Cambia el signo
     updateDisplay();
   }
 }
@@ -46,11 +46,11 @@ buttons.forEach((button) => {
     } else if (value === "C") {
       clear(); // Limpia el display y resetea los operandos
     } else if (value === "«") {
-      deleteLastDigit(); // Elimina el último dígito
+      borrarUltimoDigito(); // Elimina el último dígito
     } else if (value === "+/-") {
       toggleSign(); // Alterna el signo del operando actual
-    } else if (isOperator(value)) {
-      handleOperator(value); // Maneja la selección de operadores
+    } else if (isoperador(value)) {
+      handleoperador(value); // Maneja la selección de operadores
     } else {
       appendNumber(value); // Agrega un número al operando actual
     }
@@ -76,53 +76,53 @@ function reproducirAudio() {
 // Función para agregar un número al operando actual
 function appendNumber(number) {
   // Evita múltiples ceros iniciales
-  if (number === "0" && currentOperand === "0") return;
+  if (number === "0" && operadorActual === "0") return;
 
   // Si el usuario intenta ingresar un punto sin un número inicial, coloca "0."
-  if (number === "." && (currentOperand === "" || currentOperand === "0")) {
-    currentOperand = "0.";
+  if (number === "." && (operadorActual === "" || operadorActual === "0")) {
+    operadorActual = "0.";
     return;
   }
 
   // Evita múltiples puntos decimales en el mismo número
-  if (number === "." && currentOperand.includes(".")) return;
+  if (number === "." && operadorActual.includes(".")) return;
 
   // Reemplaza "0" con el nuevo número, o agrega el número normalmente
-  if (currentOperand === "0" && number !== ".") {
-    currentOperand = number;
+  if (operadorActual === "0" && number !== ".") {
+    operadorActual = number;
   } else {
-    currentOperand += number;
+    operadorActual += number;
   }
 }
 
 // Función para eliminar el último dígito del operando actual
-function deleteLastDigit() {
-  if (currentOperand.length > 0) {
-    currentOperand = currentOperand.slice(0, -1); // Elimina el último carácter
+function borrarUltimoDigito() {
+  if (operadorActual.length > 0) {
+    operadorActual = operadorActual.slice(0, -1); // Elimina el último carácter
   }
-  if (currentOperand.length === 0) {
-    currentOperand = "0"; // Restaura "0" si el operando está vacío
+  if (operadorActual.length === 0) {
+    operadorActual = "0"; // Restaura "0" si el operando está vacío
   }
 }
 
 // Función para manejar la selección de un operador
-function handleOperator(op) {
-  if (currentOperand === "") return; // Ignora si no hay operando actual
-  if (previousOperand !== "") calculate(); // Calcula si ya hay un operando previo
-  operator = op; // Asigna el operador seleccionado
-  previousOperand = currentOperand; // Guarda el operando actual como previo
-  currentOperand = ""; // Resetea el operando actual para el siguiente número
+function handleoperador(op) {
+  if (operadorActual === "") return; // Ignora si no hay operando actual
+  if (operadorPrevio !== "") calculate(); // Calcula si ya hay un operando previo
+  operador = op; // Asigna el operador seleccionado
+  operadorPrevio = operadorActual; // Guarda el operando actual como previo
+  operadorActual = ""; // Resetea el operando actual para el siguiente número
 }
 
 
 // Función para realizar el cálculo según el operador seleccionado
 function calculate() {
-  const prev = parseFloat(previousOperand);
-  const current = parseFloat(currentOperand);
+  const prev = parseFloat(operadorPrevio);
+  const current = parseFloat(operadorActual);
   let result;
 
   // Validación de división por cero
-  if (operator === "/" && current === 0) {
+  if (operador === "/" && current === 0) {
     Swal.fire({
       icon: "error",
       title: "ERROR",
@@ -137,7 +137,7 @@ function calculate() {
   }
 
   // Realiza el cálculo según el operador seleccionado
-  switch (operator) {
+  switch (operador) {
     case "+":
       result = prev + current;
       break;
@@ -164,25 +164,25 @@ function calculate() {
   }
 
   // Actualiza los valores de los operandos y el display
-  currentOperand = result.toString();
-  previousOperand = "";
-  operator = "";
+  operadorActual = result.toString();
+  operadorPrevio = "";
+  operador = "";
   updateDisplay();
 }
 
 // Función para limpiar el display y restablecer valores
 function clear() {
-  currentOperand = "0";
-  previousOperand = "";
-  operator = "";
+  operadorActual = "0";
+  operadorPrevio = "";
+  operador = "";
   updateDisplay();
 }
 
 // Función para ajustar el tamaño de fuente del display según el número de caracteres
 function cambiarTamañoFuenteDisplay() {
-  if (currentOperand.length > 10 && currentOperand.length < 15) {
+  if (operadorActual.length > 10 && operadorActual.length < 15) {
     display.style.fontSize = "2rem";
-  } else if (currentOperand.length > 14) {
+  } else if (operadorActual.length > 14) {
     display.style.fontSize = "1rem";
   } else {
     display.style.fontSize = "2.8rem"; // Tamaño por defecto
@@ -191,14 +191,14 @@ function cambiarTamañoFuenteDisplay() {
 
 // Función para actualizar el contenido del display principal y secundario
 function updateDisplay() {
-  display.value = formatearNumero(currentOperand); // Muestra el operando actual formateado
+  display.value = formatearNumero(operadorActual); // Muestra el operando actual formateado
   display2.value =
-    previousOperand + " " + operator + " " + formatearNumero(currentOperand); // Muestra el operador y el operando previo
+    operadorPrevio + " " + operador + " " + formatearNumero(operadorActual); // Muestra el operador y el operando previo
   cambiarTamañoFuenteDisplay();
 }
 
 // Verifica si el valor es un operador
-function isOperator(value) {
+function isoperador(value) {
   return ["+", "-", "*", "/", "%", "^", "√", "«"].includes(value);
 }
 

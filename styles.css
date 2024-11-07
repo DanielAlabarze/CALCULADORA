@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  /*height: 100vh;*/
  
 }
 
@@ -299,7 +299,7 @@ border: solid 1px red;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin: 0.5rem auto 0.5rem;
+  margin: 1.5rem auto 0.5rem;
 }
 
 .speaker {

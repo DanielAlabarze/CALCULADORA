@@ -27,12 +27,12 @@ let audioActivo = false;
 
 // Evento para activar/desactivar el sonido al presionar el botón `contenedorSpeaker`
 contenedorSpeaker.addEventListener("click", () => {
+ 
   audioActivo = !audioActivo; // Cambia el estado de audio
   contenedorSpeaker.style.backgroundColor = audioActivo ? "green" : "red"; // Cambia el color de fondo
+ 
+
 });
-
-
-
 
 // Añade un evento de clic a cada botón de la calculadora
 buttons.forEach((button) => {
@@ -42,7 +42,7 @@ buttons.forEach((button) => {
 
     // Ejecuta diferentes acciones según el botón presionado
     if (value === "=") {
-      calculate(); // Calcula el resultado
+      calculate(); // Calcula el resultadoado
     } else if (value === "C") {
       clear(); // Limpia el display y resetea los operandos
     } else if (value === "«") {
@@ -52,7 +52,7 @@ buttons.forEach((button) => {
     } else if (isoperador(value)) {
       handleoperador(value); // Maneja la selección de operadores
     } else {
-      appendNumber(value); // Agrega un número al operando actual
+      appendnumero(value); // Agrega un número al operando actual
     }
 
     updateDisplay(); // Actualiza el display con los nuevos valores
@@ -74,24 +74,24 @@ function reproducirAudio() {
 }
 
 // Función para agregar un número al operando actual
-function appendNumber(number) {
+function appendnumero(numero) {
   // Evita múltiples ceros iniciales
-  if (number === "0" && operadorActual === "0") return;
+  if (numero === "0" && operadorActual === "0") return;
 
   // Si el usuario intenta ingresar un punto sin un número inicial, coloca "0."
-  if (number === "." && (operadorActual === "" || operadorActual === "0")) {
+  if (numero === "." && (operadorActual === "" || operadorActual === "0")) {
     operadorActual = "0.";
     return;
   }
 
   // Evita múltiples puntos decimales en el mismo número
-  if (number === "." && operadorActual.includes(".")) return;
+  if (numero === "." && operadorActual.includes(".")) return;
 
   // Reemplaza "0" con el nuevo número, o agrega el número normalmente
-  if (operadorActual === "0" && number !== ".") {
-    operadorActual = number;
+  if (operadorActual === "0" && numero !== ".") {
+    operadorActual = numero;
   } else {
-    operadorActual += number;
+    operadorActual += numero;
   }
 }
 
@@ -102,6 +102,7 @@ function borrarUltimoDigito() {
   }
   if (operadorActual.length === 0) {
     operadorActual = "0"; // Restaura "0" si el operando está vacío
+
   }
 }
 
@@ -112,6 +113,7 @@ function handleoperador(op) {
   operador = op; // Asigna el operador seleccionado
   operadorPrevio = operadorActual; // Guarda el operando actual como previo
   operadorActual = ""; // Resetea el operando actual para el siguiente número
+
 }
 
 
@@ -119,7 +121,7 @@ function handleoperador(op) {
 function calculate() {
   const prev = parseFloat(operadorPrevio);
   const current = parseFloat(operadorActual);
-  let result;
+  let resultado;
 
   // Validación de división por cero
   if (operador === "/" && current === 0) {
@@ -139,36 +141,41 @@ function calculate() {
   // Realiza el cálculo según el operador seleccionado
   switch (operador) {
     case "+":
-      result = prev + current;
+      resultado = prev + current;
       break;
     case "-":
-      result = prev - current;
+      resultado = prev - current;
       break;
     case "*":
-      result = prev * current;
+      resultado = prev * current;
       break;
     case "/":
-      result = prev / current;
+      resultado = prev / current;
       break;
     case "%":
-      result = prev + (prev * current) / 100;
+      resultado = prev + (prev * current) / 100;
       break;
     case "^":
-      result = Math.pow(prev, current);
+      resultado = Math.pow(prev, current);
       break;
     case "√":
-      result = Math.sqrt(prev);
+      resultado = Math.sqrt(prev);
       break;
+
     default:
       return;
   }
 
   // Actualiza los valores de los operandos y el display
-  operadorActual = result.toString();
+  operadorActual = resultado.toString();
   operadorPrevio = "";
   operador = "";
   updateDisplay();
 }
+
+
+
+
 
 // Función para limpiar el display y restablecer valores
 function clear() {
@@ -193,7 +200,7 @@ function cambiarTamañoFuenteDisplay() {
 function updateDisplay() {
   display.value = formatearNumero(operadorActual); // Muestra el operando actual formateado
   display2.value =
-    operadorPrevio + " " + operador + " " + formatearNumero(operadorActual); // Muestra el operador y el operando previo
+    operadorPrevio + " " + operador + " " + formatearNumero(operadorActual) ; // Muestra el operador y el operando previo
   cambiarTamañoFuenteDisplay();
 }
 
@@ -203,10 +210,10 @@ function isoperador(value) {
 }
 
 // Formatea el número con separadores de miles y coma decimal
-function formatearNumero(number) {
-  if (number === "") return "";
+function formatearNumero(numero) {
+  if (numero === "") return "";
 
-  let numeroString = number.toString();
+  let numeroString = numero.toString();
   let partes = numeroString.split(".");
   let parteEntera = partes[0];
   let parteDecimal = partes[1] || "";

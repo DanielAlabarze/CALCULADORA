@@ -11,8 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*height: 100vh;*/
- 
+  height: 100vh;
 }
 
 .calculator {
@@ -50,7 +49,6 @@ border: solid 1px red;
   justify-content: center;
   text-align: center;
   align-items: center;
-
 }
 
 .buttons {
@@ -248,7 +246,7 @@ border: solid 1px red;
   font-size: 2rem;
   height: 3.8rem;
   text-align: center;
-  color:white;
+  color: white;
   background-color: #4c00ffd7;
 }
 .punto {
@@ -292,6 +290,7 @@ border: solid 1px red;
   padding: 0.1rem 0.5rem 0.1rem;
   text-align: right;
 }
+
 .contenedorSpeaker {
   width: 2rem;
   height: 2rem;
@@ -308,4 +307,43 @@ border: solid 1px red;
   border-radius: 50%;
 }
 
-/* ophone 7 plus 414px × 736px */
+@media (max-width: 376px) {
+  .b1,.b2,
+  .b3,
+  .b4,
+  .b5,
+  .b6,
+  .b7,
+  .b8,
+  .b9,
+  .borrarUltimoDigito,
+  .sumar,
+  .restar,
+  .dividir,
+  .multiplicar,
+  .borrar,
+  .potencia,
+  .porcentaje,
+  .positivoOnegativo,
+  .punto,
+  .raiz {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
+  .b0,.igual {
+    width: 7.6rem;
+    height: 3.3rem;
+}
+.caja1,
+.caja2,
+.caja3,
+.caja4,
+.caja5,
+.caja6 {
+
+justify-content: space-around;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+}
+
+}

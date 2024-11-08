@@ -27,17 +27,13 @@ let audioActivo = false;
 
 // Evento para activar/desactivar el sonido al presionar el botón `contenedorSpeaker`
 contenedorSpeaker.addEventListener("click", () => {
- 
   audioActivo = !audioActivo; // Cambia el estado de audio
   contenedorSpeaker.style.backgroundColor = audioActivo ? "green" : "red"; // Cambia el color de fondo
- 
-
 });
 
 // Añade un evento de clic a cada botón de la calculadora
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
- 
     const value = button.textContent;
 
     // Ejecuta diferentes acciones según el botón presionado
@@ -68,7 +64,7 @@ buttons.forEach((button) => {
 function reproducirAudio() {
   audio.play(); // Reproduce el sonido
   setTimeout(() => {
-    audio.pause(); // Pausa el audio después de 100ms
+    audio.pause(); // Pausa el audio después de 80ms
     audio.currentTime = 0; // Reinicia el audio al inicio
   }, 80);
 }
@@ -102,7 +98,6 @@ function borrarUltimoDigito() {
   }
   if (operadorActual.length === 0) {
     operadorActual = "0"; // Restaura "0" si el operando está vacío
-
   }
 }
 
@@ -113,9 +108,7 @@ function handleoperador(op) {
   operador = op; // Asigna el operador seleccionado
   operadorPrevio = operadorActual; // Guarda el operando actual como previo
   operadorActual = ""; // Resetea el operando actual para el siguiente número
-
 }
-
 
 // Función para realizar el cálculo según el operador seleccionado
 function calculate() {
@@ -130,13 +123,52 @@ function calculate() {
       title: "ERROR",
       text: "No es posible la División por cero ",
       background: "black",
-      color : "white",
-      width: "230px",
+      color: "white",
+      width: "200px",
     });
 
     clear();
     return;
   }
+
+  // Broma 1 -----------------------------------------------------
+  if (prev === 2 && operador === "*" && current === 3) {
+    Swal.fire({
+      icon: "warning",
+      title: "2 x 3",
+      text: "Llueve",
+      background: "black",
+      color: "white",
+      width: "200px",
+    });
+  }
+  //-----------------------------------------------------------------
+  //Broma 2
+  if (prev === 5 && operador === "*" && current === 1) {
+    Swal.fire({
+      icon: "info",
+      title: "5 x 1",
+      text: "No va a quedar ninguno",
+      background: "black",
+      color: "white",
+      width: "200px",
+    });
+  }
+
+  //--------------------------------------------------------------------
+  //Broma 3
+  if (prev === 2 && operador === "+" && current === 2) {
+    Swal.fire({
+      icon: "question",
+      title: "2 + 2",
+      text: "Hace falta que te ayude con ese calculo?",
+      background: "black",
+      color: "white",
+      width: "200px",
+    });
+  }
+
+  //--------------------------------------------------------------------
 
   // Realiza el cálculo según el operador seleccionado
   switch (operador) {
@@ -173,10 +205,6 @@ function calculate() {
   updateDisplay();
 }
 
-
-
-
-
 // Función para limpiar el display y restablecer valores
 function clear() {
   operadorActual = "0";
@@ -200,7 +228,7 @@ function cambiarTamañoFuenteDisplay() {
 function updateDisplay() {
   display.value = formatearNumero(operadorActual); // Muestra el operando actual formateado
   display2.value =
-    operadorPrevio + " " + operador + " " + formatearNumero(operadorActual) ; // Muestra el operador y el operando previo
+    operadorPrevio + " " + operador + " " + formatearNumero(operadorActual); // Muestra el operador y el operando previo
   cambiarTamañoFuenteDisplay();
 }
 

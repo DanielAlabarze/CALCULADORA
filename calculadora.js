@@ -125,6 +125,7 @@ function calculate() {
       background: "black",
       color: "white",
       width: "200px",
+    
     });
 
     clear();

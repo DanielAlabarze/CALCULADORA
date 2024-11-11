@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*height: 100vh;*/
+  height: 100vh;
 }
 
 .calculator {
@@ -158,7 +158,7 @@ border: solid 1px red;
   color: black;
 }
 .b0 {
-  width: 8.53rem;
+  width: 8.50rem;
   /*width: 7.59rem;*/
   font-size: 2rem;
   border-radius: 15px;
@@ -241,7 +241,7 @@ border: solid 1px red;
   background-color: #ff0000;
 }
 .igual {
-  width: 8.53rem;
+  width: 8.50rem;
   border-radius: 15px;
   font-size: 2rem;
   height: 3.8rem;
